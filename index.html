@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kulmeri Academic | Barista & Pastry Academy</title>
+  <meta name="description" content="Learn the art of coffee and pastry with hands-on training, professional guidance, and real-world skills at Kulmeri Academic in Mogadishu, Somalia.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kulmeri: {
+              primary: '#2A1810',
+              dark: '#1A0E08',
+              warm: '#3E2316',
+              gold: '#C68A4C',
+              'gold-hover': '#B3783A',
+              'gold-light': '#E8C59A',
+              cream: '#FAF6F0',
+              sand: '#F3EBDD',
+              border: '#E5D8C5'
+            },
+            whatsapp: {
+              DEFAULT: '#25D366',
+              dark: '#128C7E',
+              hover: '#20BD5A'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#FAF6F0] text-[#332318] font-sans antialiased selection:bg-[#C68A4C] selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-[#2A1810] text-[#E8C59A] text-xs py-2 px-4 border-b border-[#3E2316]">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+        <span class="font-medium text-white">Enrollment Open for New Cohort</span>
+        <span class="text-stone-400 hidden md:inline">| Professional Certification in Barista & Pastry Arts</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20inquire%20about%20upcoming%20classes." target="_blank" class="flex items-center space-x-1.5 hover:text-white transition-colors">
+          <i class="fab fa-whatsapp text-[#25D366]"></i>
+          <span>+252 770 662 323</span>
+        </a>
+        <span class="text-stone-500">/</span>
+        <a href="https://wa.me/252613911963?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20inquire%20about%20upcoming%20classes." target="_blank" class="flex items-center space-x-1.5 hover:text-white transition-colors">
+          <i class="fab fa-whatsapp text-[#25D366]"></i>
+          <span>+252 613 911 963</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR (Customized per instruction: Only Barista Class, Pastry Class, Contact, WhatsApp) -->
+  <header id="mainNavbar" class="sticky top-0 z-40 bg-[#FAF6F0]/95 backdrop-blur-md border-b border-[#E8DDCD]/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Kulmeri Brand Logo -->
+        <a href="#" class="flex items-center group">
+          <img src="assets/logo.svg" alt="Kulmeri Academic - Barista & Pastry" class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+        </a>
+
+        <!-- Streamlined Navigation Links (Barista Class, Pastry Class, Contact) -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#barista-class" class="text-sm font-semibold text-[#2A1810] hover:text-[#C68A4C] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C68A4C] hover:after:w-full after:transition-all after:duration-300">
+            Barista Class
+          </a>
+          <a href="#pastry-class" class="text-sm font-semibold text-[#2A1810] hover:text-[#C68A4C] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C68A4C] hover:after:w-full after:transition-all after:duration-300">
+            Pastry Class
+          </a>
+          <a href="#contact" class="text-sm font-semibold text-[#2A1810] hover:text-[#C68A4C] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#C68A4C] hover:after:w-full after:transition-all after:duration-300">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Direct WhatsApp & Enroll Action Buttons in Navbar -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <!-- WhatsApp Direct Link Button -->
+          <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20want%20to%20learn%20more%20about%20your%20classes." target="_blank" 
+             class="btn-whatsapp inline-flex items-center space-x-2 px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow-md">
+            <i class="fab fa-whatsapp text-sm"></i>
+            <span>WhatsApp Us</span>
+          </a>
+
+          <!-- Enroll CTA Button -->
+          <a href="#contact" class="btn-primary inline-flex items-center space-x-1.5 px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider">
+            <span>Enroll Now</span>
+            <i class="fas fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <div class="md:hidden flex items-center space-x-2">
+          <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!" target="_blank" class="p-2 text-[#25D366] text-xl" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <button id="mobileMenuBtn" type="button" class="p-2 text-[#2A1810] focus:outline-none focus:ring-2 focus:ring-[#C68A4C] rounded-lg" aria-label="Toggle Navigation Menu">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden md:hidden pb-5 pt-2 border-t border-[#E8DDCD]">
+        <div class="flex flex-col space-y-3 pt-2">
+          <a href="#barista-class" class="mobile-nav-link text-base font-semibold text-[#2A1810] hover:text-[#C68A4C] px-3 py-2 rounded-lg hover:bg-white/60">
+            <i class="fas fa-coffee text-[#C68A4C] w-6"></i> Barista Class
+          </a>
+          <a href="#pastry-class" class="mobile-nav-link text-base font-semibold text-[#2A1810] hover:text-[#C68A4C] px-3 py-2 rounded-lg hover:bg-white/60">
+            <i class="fas fa-birthday-cake text-[#C68A4C] w-6"></i> Pastry Class
+          </a>
+          <a href="#contact" class="mobile-nav-link text-base font-semibold text-[#2A1810] hover:text-[#C68A4C] px-3 py-2 rounded-lg hover:bg-white/60">
+            <i class="fas fa-phone-alt text-[#C68A4C] w-6"></i> Contact
+          </a>
+          <div class="pt-3 flex flex-col space-y-2">
+            <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!" target="_blank" class="btn-whatsapp text-center py-3 rounded-full text-sm font-bold flex items-center justify-center space-x-2">
+              <i class="fab fa-whatsapp text-base"></i>
+              <span>Direct WhatsApp Contact</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link btn-primary text-center py-3 rounded-full text-sm font-bold">
+              Enroll Now <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-6 space-y-6">
+            <!-- Badge / Eyebrow -->
+            <div class="inline-flex items-center space-x-2">
+              <span class="h-px w-8 bg-[#C68A4C]"></span>
+              <span class="text-xs font-bold tracking-widest uppercase text-[#8C531B]">Professional Training</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-[#2A1810] leading-[1.15] tracking-tight">
+              Barista &amp; Pastry Academy
+            </h1>
+
+            <!-- Description Paragraph -->
+            <p class="text-base sm:text-lg text-stone-700 leading-relaxed max-w-xl">
+              Learn the art of coffee and pastry with hands-on training, professional guidance, and real-world skills at <strong class="text-[#2A1810]">Kulmeri Academic</strong>.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <!-- Primary CTA (Direct WhatsApp Enrollment) -->
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20enroll%20in%20your%20academy." target="_blank" 
+                 class="btn-primary inline-flex items-center space-x-2.5 px-7 py-3.5 rounded-full text-sm font-bold tracking-wide">
+                <span>Enroll Now</span>
+                <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+
+              <!-- Secondary Button (Smooth Scroll to Classes) -->
+              <a href="#courses" 
+                 class="inline-flex items-center space-x-2 px-6 py-3.5 rounded-full text-sm font-bold text-[#2A1810] bg-white border border-[#D8CBB6] hover:border-[#C68A4C] hover:bg-[#F3EBDD]/40 transition-all duration-300 shadow-sm">
+                <span>View Courses</span>
+                <i class="fas fa-chevron-right text-xs text-[#C68A4C]"></i>
+              </a>
+
+              <!-- Quick WhatsApp Pill -->
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20have%20questions%20regarding%20training." target="_blank"
+                 class="inline-flex items-center space-x-1.5 px-4 py-3.5 rounded-full text-xs font-semibold text-[#1B6F3A] bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/20 transition-colors">
+                <i class="fab fa-whatsapp text-sm"></i>
+                <span>Direct WhatsApp Chat</span>
+              </a>
+            </div>
+
+            <!-- 3 Trust Badges (Graduation cap, Instructors, Practical Experience) -->
+            <div class="pt-6 border-t border-[#E8DDCD]/80 grid grid-cols-3 gap-4">
+              <div class="flex flex-col items-center sm:items-start text-center sm:text-left space-y-1.5">
+                <div class="w-10 h-10 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B] shadow-sm">
+                  <i class="fas fa-graduation-cap text-base"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-[#2A1810]">Professional<br class="hidden sm:inline"> Training</h4>
+              </div>
+
+              <div class="flex flex-col items-center sm:items-start text-center sm:text-left space-y-1.5">
+                <div class="w-10 h-10 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B] shadow-sm">
+                  <i class="fas fa-user-tie text-base"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-[#2A1810]">Expert<br class="hidden sm:inline"> Instructors</h4>
+              </div>
+
+              <div class="flex flex-col items-center sm:items-start text-center sm:text-left space-y-1.5">
+                <div class="w-10 h-10 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B] shadow-sm">
+                  <i class="fas fa-hands text-base"></i>
+                </div>
+                <h4 class="text-xs sm:text-sm font-bold text-[#2A1810]">Practical<br class="hidden sm:inline"> Hands-on Exp.</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image & Floating Cards -->
+          <div class="lg:col-span-6 relative">
+            <!-- Decorative Backing -->
+            <div class="absolute -top-6 -right-6 w-72 h-72 bg-[#E7C293]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="assets/hero.jpg" alt="Kulmeri Barista pouring latte art with gourmet cake" class="w-full h-[400px] sm:h-[480px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+              
+              <!-- Gradient Overlay at Bottom -->
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2A1810]/70 via-transparent to-transparent"></div>
+
+              <!-- Academy Badge on Hero -->
+              <div class="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-[#E8DDCD] flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <div class="w-10 h-10 rounded-xl bg-[#2A1810] flex items-center justify-center text-[#E8C59A]">
+                    <i class="fas fa-award text-lg"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs text-stone-500 font-medium uppercase tracking-wider">Accredited Academy</p>
+                    <p class="text-sm font-bold text-[#2A1810]">Somalia's Premier Barista &amp; Pastry Hub</p>
+                  </div>
+                </div>
+                <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20Please%20send%20me%20enrollment%20information." target="_blank" class="hidden sm:inline-flex items-center space-x-1 text-xs font-bold text-[#25D366] hover:text-[#128C7E]">
+                  <span>Chat Now</span>
+                  <i class="fas fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THE TWO CLASSES SECTION ("Our Courses") -->
+    <!-- (Per instructions: Focus on Barista Class and the second class: Pastry Class) -->
+    <section id="courses" class="py-16 bg-[#F3EBDD]/60 border-y border-[#E8DDCD]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center space-x-2 mb-2">
+            <span class="h-px w-8 bg-[#C68A4C]"></span>
+            <span class="text-xs font-bold tracking-widest uppercase text-[#8C531B]">Featured Programs</span>
+            <span class="h-px w-8 bg-[#C68A4C]"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-[#2A1810] mb-3">
+            Our Professional Classes
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base">
+            Master the specialized disciplines of culinary craftsmanship with hands-on practice, world-class machinery, and SCA-aligned certification.
+          </p>
+        </div>
+
+        <!-- The Two Main Course Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+
+          <!-- 1. BARISTA CLASS CARD -->
+          <div id="barista-class" class="course-card bg-white rounded-3xl overflow-hidden border border-[#E8DDCD] flex flex-col justify-between">
+            <div>
+              <!-- Course Visual Banner -->
+              <div class="relative h-64 sm:h-72 overflow-hidden group">
+                <img src="assets/barista-class.jpg" alt="Kulmeri Barista Training Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                <!-- Tag Pills -->
+                <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                  <span class="bg-[#2A1810]/90 backdrop-blur-sm text-[#E8C59A] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Our Courses
+                  </span>
+                  <span class="bg-[#25D366] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center space-x-1 shadow-sm">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Quick Enrollment</span>
+                  </span>
+                </div>
+
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="text-xs text-amber-300 font-semibold uppercase tracking-wider block mb-0.5">Specialty Coffee</span>
+                  <h3 class="font-serif text-2xl sm:text-3xl font-bold">Barista Training</h3>
+                </div>
+              </div>
+
+              <!-- Course Description & Details -->
+              <div class="p-6 sm:p-8 space-y-5">
+                <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
+                  Learn coffee brewing, espresso extraction, latte art, beverage preparation and professional barista skills.
+                </p>
+
+                <!-- Course Fast Facts -->
+                <div class="grid grid-cols-3 gap-3 py-3 border-y border-[#FAF0E4] text-center">
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Duration</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#2A1810]">4 Weeks</span>
+                  </div>
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Practical</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#2A1810]">90% Lab</span>
+                  </div>
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Certificate</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#8C531B]">Certified</span>
+                  </div>
+                </div>
+
+                <!-- Syllabus Bullet Points / Skills Covered -->
+                <div class="space-y-2.5">
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#8C531B]">Core Skills You Will Master:</h4>
+                  <ul class="text-xs sm:text-sm text-stone-600 space-y-1.5">
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Commercial espresso machine operation &amp; dial-in</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Milk steaming, silky microfoam &amp; Latte Art (Heart, Rosetta)</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Manual pour-over brewing (V60, Chemex, Aeropress, Cold Brew)</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Grinder calibration, coffee cupping &amp; sensory tasting</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Barista speed of service &amp; café opening/closing protocols</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 sm:p-8 pt-0 flex flex-col sm:flex-row gap-3">
+              <!-- Direct WhatsApp Button -->
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20%E2%98%95%20I%20am%20interested%20in%20enrolling%20in%20the%20Barista%20Training%20Class.%20Please%20share%20the%20intake%20dates%20and%20fees." 
+                 target="_blank" 
+                 class="btn-whatsapp flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center space-x-2 shadow-md">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>Enroll via WhatsApp</span>
+              </a>
+
+              <!-- Learn More / Syllabus Modal Button -->
+              <button type="button" 
+                      onclick="openModal('baristaModal')" 
+                      class="btn-primary py-3 px-5 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center space-x-1.5">
+                <span>Learn More</span>
+                <i class="fas fa-arrow-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+
+
+          <!-- 2. PASTRY CLASS CARD (The Second Class) -->
+          <div id="pastry-class" class="course-card bg-white rounded-3xl overflow-hidden border border-[#E8DDCD] flex flex-col justify-between">
+            <div>
+              <!-- Course Visual Banner -->
+              <div class="relative h-64 sm:h-72 overflow-hidden group">
+                <img src="assets/pastry-class.jpg" alt="Kulmeri Pastry Training Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                
+                <!-- Tag Pills -->
+                <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                  <span class="bg-[#2A1810]/90 backdrop-blur-sm text-[#E8C59A] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Our Courses
+                  </span>
+                  <span class="bg-[#25D366] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center space-x-1 shadow-sm">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Quick Enrollment</span>
+                  </span>
+                </div>
+
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="text-xs text-amber-300 font-semibold uppercase tracking-wider block mb-0.5">Bakery &amp; Confectionery</span>
+                  <h3 class="font-serif text-2xl sm:text-3xl font-bold">Pastry Training</h3>
+                </div>
+              </div>
+
+              <!-- Course Description & Details -->
+              <div class="p-6 sm:p-8 space-y-5">
+                <p class="text-stone-700 text-sm sm:text-base leading-relaxed">
+                  Learn bakery and pastry skills including cakes, desserts, bread, creatives and modern pastry techniques.
+                </p>
+
+                <!-- Course Fast Facts -->
+                <div class="grid grid-cols-3 gap-3 py-3 border-y border-[#FAF0E4] text-center">
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Duration</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#2A1810]">6 Weeks</span>
+                  </div>
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Practical</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#2A1810]">90% Lab</span>
+                  </div>
+                  <div class="bg-[#FAF6F0] p-2.5 rounded-xl border border-[#E8DDCD]">
+                    <span class="block text-xs text-stone-500 font-medium">Certificate</span>
+                    <span class="block text-xs sm:text-sm font-bold text-[#8C531B]">Certified</span>
+                  </div>
+                </div>
+
+                <!-- Syllabus Bullet Points / Skills Covered -->
+                <div class="space-y-2.5">
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-[#8C531B]">Core Skills You Will Master:</h4>
+                  <ul class="text-xs sm:text-sm text-stone-600 space-y-1.5">
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>French Viennoiserie (Croissants, Pain au Chocolat, Brioche)</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Artisan cake baking, delicate sponge layering &amp; crumb coating</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Buttercream piping, fondant modeling &amp; modern mirror glazes</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Chocolate tempering, ganache emulsification &amp; pralines</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                      <i class="fas fa-check-circle text-[#C68A4C]"></i>
+                      <span>Food safety, bakery kitchen inventory &amp; pricing your bakes</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="p-6 sm:p-8 pt-0 flex flex-col sm:flex-row gap-3">
+              <!-- Direct WhatsApp Button -->
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20%F0%9F%A5%90%20I%20am%20interested%20in%20enrolling%20in%20the%20Pastry%20Training%20Class.%20Please%20share%20the%20intake%20dates%20and%20fees." 
+                 target="_blank" 
+                 class="btn-whatsapp flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center space-x-2 shadow-md">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span>Enroll via WhatsApp</span>
+              </a>
+
+              <!-- Learn More / Syllabus Modal Button -->
+              <button type="button" 
+                      onclick="openModal('pastryModal')" 
+                      class="btn-primary py-3 px-5 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center space-x-1.5">
+                <span>Learn More</span>
+                <i class="fas fa-arrow-right text-xs"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE KULMERI SECTION -->
+    <section class="py-16 lg:py-24 bg-[#FAF6F0] relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <!-- Left Details (Headline, Subtitle, 4 Pillars) -->
+          <div class="lg:col-span-7 space-y-8">
+            <div>
+              <div class="inline-flex items-center space-x-2 mb-2">
+                <span class="h-px w-8 bg-[#C68A4C]"></span>
+                <span class="text-xs font-bold tracking-widest uppercase text-[#8C531B]">Excellence in Training</span>
+              </div>
+              <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2A1810] tracking-tight">
+                Why Choose Kulmeri?
+              </h2>
+              <p class="mt-4 text-stone-600 text-base sm:text-lg leading-relaxed">
+                We provide practical, hands-on training with professional instructors to help you build real skills for your future.
+              </p>
+            </div>
+
+            <!-- 4 Pillar Cards (Exact copy from mockup) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+              
+              <!-- 1. Experienced Instructors -->
+              <div class="bg-white p-6 rounded-2xl border border-[#E8DDCD] shadow-sm hover:shadow-md transition-shadow space-y-3">
+                <div class="w-12 h-12 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B]">
+                  <i class="fas fa-user-graduate text-lg"></i>
+                </div>
+                <h3 class="text-base font-bold text-[#2A1810]">Experienced Instructors</h3>
+                <p class="text-xs sm:text-sm text-stone-600">
+                  Learn from industry professionals with real-world café and culinary leadership experience.
+                </p>
+              </div>
+
+              <!-- 2. Hands-on Training -->
+              <div class="bg-white p-6 rounded-2xl border border-[#E8DDCD] shadow-sm hover:shadow-md transition-shadow space-y-3">
+                <div class="w-12 h-12 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B]">
+                  <i class="fas fa-mug-hot text-lg"></i>
+                </div>
+                <h3 class="text-base font-bold text-[#2A1810]">Hands-on Training</h3>
+                <p class="text-xs sm:text-sm text-stone-600">
+                  Real practice with modern commercial espresso equipment and professional baking ovens.
+                </p>
+              </div>
+
+              <!-- 3. International Standards -->
+              <div class="bg-white p-6 rounded-2xl border border-[#E8DDCD] shadow-sm hover:shadow-md transition-shadow space-y-3">
+                <div class="w-12 h-12 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B]">
+                  <i class="fas fa-globe-africa text-lg"></i>
+                </div>
+                <h3 class="text-base font-bold text-[#2A1810]">International Standards</h3>
+                <p class="text-xs sm:text-sm text-stone-600">
+                  Curriculum based on global SCA specialty standards and French pastry principles.
+                </p>
+              </div>
+
+              <!-- 4. Career Support -->
+              <div class="bg-white p-6 rounded-2xl border border-[#E8DDCD] shadow-sm hover:shadow-md transition-shadow space-y-3">
+                <div class="w-12 h-12 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B]">
+                  <i class="fas fa-briefcase text-lg"></i>
+                </div>
+                <h3 class="text-base font-bold text-[#2A1810]">Career Support</h3>
+                <p class="text-xs sm:text-sm text-stone-600">
+                  Guidance for job opportunities, coffee shop placement, and starting your own bakery business.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- WhatsApp Direct Action Prompt -->
+            <div class="p-4 rounded-2xl bg-[#F3EBDD] border border-[#E2B77A] flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center text-xl flex-shrink-0">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-[#2A1810]">Have questions about which class is right for you?</h4>
+                  <p class="text-xs text-stone-600">Chat directly with our academic advisor on WhatsApp</p>
+                </div>
+              </div>
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri!%20I%20would%20like%20guidance%20on%20choosing%20between%20the%20Barista%20and%20Pastry%20classes." target="_blank" class="btn-whatsapp px-5 py-2 rounded-full text-xs font-bold whitespace-nowrap shadow-sm">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Arched Visual Frame (Exact Arched Composition from Mockup) -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <!-- Outer Dashed Ring matching design -->
+              <div class="arch-ring"></div>
+              
+              <!-- Arched Visual Box -->
+              <div class="arch-frame bg-stone-900 border-4 border-white relative h-[480px] sm:h-[540px]">
+                <img src="assets/why-kulmeri.jpg" alt="Artisan coffee latte and chocolate cake at Kulmeri Academic" class="w-full h-full object-cover">
+                
+                <!-- Bottom Floating Pill -->
+                <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-[#2A1810]/95 backdrop-blur-md text-white border border-[#C68A4C]/40 text-center space-y-1">
+                  <p class="text-xs font-semibold text-[#E8C59A] uppercase tracking-wider">Join Mogadishu's #1 Culinary Hub</p>
+                  <p class="text-sm font-serif font-bold">100% Practical Experience Guaranteed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT KULMERI ACADEMIC / PASSION FOR COFFEE AND PASTRY EDUCATION -->
+    <section class="py-16 lg:py-24 bg-[#2A1810] text-[#FAF6F0] relative overflow-hidden">
+      <!-- Background Glow Elements -->
+      <div class="absolute top-0 right-0 w-96 h-96 bg-[#C68A4C]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Story Content -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center space-x-2">
+              <span class="h-px w-8 bg-[#C68A4C]"></span>
+              <span class="text-xs font-bold tracking-widest uppercase text-[#E8C59A]">About Kulmeri Academic</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+              Passion for Coffee<br class="hidden sm:inline"> and Pastry Education
+            </h2>
+
+            <p class="text-stone-300 text-base sm:text-lg leading-relaxed">
+              Kulmeri Academic is a professional training center dedicated to teaching barista and pastry skills. We aim to empower individuals with practical knowledge, creativity and the skills needed to succeed in the café and bakery industry.
+            </p>
+
+            <!-- Key Milestones -->
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-[#3E2316]">
+              <div>
+                <span class="block font-serif text-3xl font-extrabold text-[#E8C59A]">500+</span>
+                <span class="text-xs text-stone-400">Graduated Students</span>
+              </div>
+              <div>
+                <span class="block font-serif text-3xl font-extrabold text-[#E8C59A]">98%</span>
+                <span class="text-xs text-stone-400">Employment Rate</span>
+              </div>
+              <div>
+                <span class="block font-serif text-3xl font-extrabold text-[#E8C59A]">100%</span>
+                <span class="text-xs text-stone-400">Hands-on Practice</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20learn%20more%20about%20your%20mission%20and%20instructors." 
+                 target="_blank" 
+                 class="btn-gold inline-flex items-center space-x-2 px-7 py-3.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
+                <span>Learn More About Us</span>
+                <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+
+              <a href="https://wa.me/252613911963?text=Hello%20Kulmeri%20Academic!%20I%20am%20ready%20to%20register." 
+                 target="_blank" 
+                 class="btn-whatsapp inline-flex items-center space-x-2 px-6 py-3.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider">
+                <i class="fab fa-whatsapp text-base"></i>
+                <span>WhatsApp Admissions</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Instructor Image (Somali female barista in hijab & apron pouring latte art) -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-3xl overflow-hidden border-2 border-[#C68A4C]/30 shadow-2xl group">
+              <img src="assets/about-instructor.jpg" alt="Kulmeri Barista Instructor pouring latte art" class="w-full h-[400px] sm:h-[480px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-6 left-6 right-6 text-white space-y-1">
+                <div class="inline-block px-3 py-1 bg-[#C68A4C] text-[#2A1810] text-[11px] font-extrabold rounded-full uppercase tracking-wider mb-1">
+                  Master Instructor
+                </div>
+                <h4 class="font-serif text-xl sm:text-2xl font-bold">Personalized Mentorship</h4>
+                <p class="text-xs sm:text-sm text-stone-300">
+                  Every student receives one-on-one station coaching on commercial machinery.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR LEARNING ENVIRONMENT SECTION (Interactive Carousel / Gallery) -->
+    <section class="py-16 lg:py-24 bg-[#FAF6F0] relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header & Nav Buttons -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div class="inline-flex items-center space-x-2 mb-2">
+              <span class="h-px w-8 bg-[#C68A4C]"></span>
+              <span class="text-xs font-bold tracking-widest uppercase text-[#8C531B]">Modern Campus</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-[#2A1810]">
+              Our Learning Environment
+            </h2>
+            <p class="mt-2 text-stone-600 text-sm sm:text-base">
+              A modern and fully equipped training space for the best hands-on experience.
+            </p>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="flex items-center space-x-3">
+            <button id="prevCarouselBtn" type="button" aria-label="Previous Slide" 
+                    class="w-11 h-11 rounded-full border border-[#D8CBB6] bg-white text-[#2A1810] hover:bg-[#2A1810] hover:text-white transition-all flex items-center justify-center shadow-sm">
+              <i class="fas fa-chevron-left text-sm"></i>
+            </button>
+            <button id="nextCarouselBtn" type="button" aria-label="Next Slide" 
+                    class="w-11 h-11 rounded-full border border-[#D8CBB6] bg-white text-[#2A1810] hover:bg-[#2A1810] hover:text-white transition-all flex items-center justify-center shadow-sm">
+              <i class="fas fa-chevron-right text-sm"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Scroll Container -->
+        <div id="environmentCarousel" class="flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-none scroll-smooth">
+          
+          <!-- Environment 1: Commercial Espresso Bar -->
+          <div class="carousel-item flex-shrink-0 w-72 sm:w-80 snap-start bg-white rounded-2xl overflow-hidden border border-[#E8DDCD] shadow-sm hover:shadow-md transition-all cursor-pointer group"
+               onclick="openLightbox('assets/env-espresso.jpg', 'Commercial Espresso Extraction & Dial-in Bar')">
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/env-espresso.jpg" alt="Commercial Espresso Station" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+              <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-[#2A1810]">
+                <i class="fas fa-expand text-xs"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <h4 class="font-serif font-bold text-base text-[#2A1810]">Commercial Espresso Bar</h4>
+              <p class="text-xs text-stone-500 mt-1">Multi-group professional espresso machines, digital grinders, and precision scales.</p>
+            </div>
+          </div>
+
+          <!-- Environment 2: Latte Art Practice Lab -->
+          <div class="carousel-item flex-shrink-0 w-72 sm:w-80 snap-start bg-white rounded-2xl overflow-hidden border border-[#E8DDCD] shadow-sm hover:shadow-md transition-all cursor-pointer group"
+               onclick="openLightbox('assets/env-latte-art.jpg', 'Latte Art & Milk Texturing Studio')">
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/env-latte-art.jpg" alt="Latte Art Practice Station" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+              <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-[#2A1810]">
+                <i class="fas fa-expand text-xs"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <h4 class="font-serif font-bold text-base text-[#2A1810]">Latte Art Studio</h4>
+              <p class="text-xs text-stone-500 mt-1">Dedicated milk steaming pitchers, temperature probes, and latte art stations.</p>
+            </div>
+          </div>
+
+          <!-- Environment 3: Artisan Pastry Kitchen -->
+          <div class="carousel-item flex-shrink-0 w-72 sm:w-80 snap-start bg-white rounded-2xl overflow-hidden border border-[#E8DDCD] shadow-sm hover:shadow-md transition-all cursor-pointer group"
+               onclick="openLightbox('assets/env-pastry.jpg', 'Artisan Pastry & Confectionery Kitchen')">
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/env-pastry.jpg" alt="Artisan Pastry Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+              <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-[#2A1810]">
+                <i class="fas fa-expand text-xs"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <h4 class="font-serif font-bold text-base text-[#2A1810]">Bakery &amp; Pastry Lab</h4>
+              <p class="text-xs text-stone-500 mt-1">Marble pastry tables, convection deck ovens, spiral mixers, and decorating tools.</p>
+            </div>
+          </div>
+
+          <!-- Environment 4: Training Classroom in Mogadishu -->
+          <div class="carousel-item flex-shrink-0 w-72 sm:w-80 snap-start bg-white rounded-2xl overflow-hidden border border-[#E8DDCD] shadow-sm hover:shadow-md transition-all cursor-pointer group"
+               onclick="openLightbox('assets/env-academy.jpg', 'Culinary Classroom & Cupping Room')">
+            <div class="h-56 overflow-hidden relative">
+              <img src="assets/env-academy.jpg" alt="Kulmeri Training Classroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+              <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-[#2A1810]">
+                <i class="fas fa-expand text-xs"></i>
+              </div>
+            </div>
+            <div class="p-4">
+              <h4 class="font-serif font-bold text-base text-[#2A1810]">Interactive Academy Studio</h4>
+              <p class="text-xs text-stone-500 mt-1">Spacious, air-conditioned culinary lab designed for student teamwork and practice.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER (Dark Coffee Background) -->
+    <section class="py-16 bg-[#20110A] text-white border-y border-[#3E2316] relative overflow-hidden">
+      <!-- Decorative beans watermark overlay -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+          
+          <div class="space-y-3 max-w-2xl">
+            <span class="text-xs font-bold tracking-widest uppercase text-[#E8C59A]">Start Your Journey Today</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
+              Turn Your Passion Into a Professional Skill
+            </h2>
+            <p class="text-stone-300 text-sm sm:text-base">
+              Join Kulmeri Academic and learn from expert instructors in a professional and friendly environment.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <!-- Direct WhatsApp Enroll Button -->
+            <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20am%20ready%20to%20enroll.%20Please%20tell%20me%20the%20next%20steps." 
+               target="_blank" 
+               class="btn-whatsapp px-8 py-4 rounded-full text-sm font-bold flex items-center space-x-2.5 shadow-xl hover:scale-105 transition-transform">
+              <i class="fab fa-whatsapp text-xl"></i>
+              <span>Enroll Now via WhatsApp</span>
+            </a>
+
+            <!-- Direct Call Button -->
+            <a href="tel:+252770662323" 
+               class="px-7 py-4 rounded-full text-sm font-bold bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors flex items-center space-x-2">
+              <i class="fas fa-phone-alt text-xs"></i>
+              <span>Call Us Directly</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & DIRECT WHATSAPP SECTION -->
+    <!-- (Per instruction: "I want you to add the contact and the WhatsApp link so the client can contact directly with it.") -->
+    <section id="contact" class="py-16 lg:py-24 bg-[#FAF6F0]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <div class="inline-flex items-center space-x-2 mb-2">
+            <span class="h-px w-8 bg-[#C68A4C]"></span>
+            <span class="text-xs font-bold tracking-widest uppercase text-[#8C531B]">Get in Touch</span>
+            <span class="h-px w-8 bg-[#C68A4C]"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2A1810]">
+            Contact Kulmeri Academic
+          </h2>
+          <p class="mt-3 text-stone-600 text-sm sm:text-base">
+            Reach out directly via WhatsApp, give us a phone call, or send an inquiry to secure your seat in the next intake.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+          <!-- Left Column: Quick Contact Cards & Direct WhatsApp Links -->
+          <div class="lg:col-span-5 space-y-5">
+            
+            <!-- WhatsApp Spotlight Card -->
+            <div class="p-6 sm:p-7 rounded-3xl bg-gradient-to-br from-[#128C7E] to-[#075E54] text-white shadow-xl space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold uppercase tracking-wider bg-white/20 px-3 py-1 rounded-full text-white">
+                  Fastest Response
+                </span>
+                <i class="fab fa-whatsapp text-3xl text-[#25D366]"></i>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-bold font-serif">Instant WhatsApp Assistance</h3>
+                <p class="text-xs sm:text-sm text-green-100 mt-1">
+                  Our admissions team is available daily on WhatsApp to answer questions, share schedules, and finalize registration.
+                </p>
+              </div>
+
+              <div class="space-y-2 pt-2">
+                <!-- WhatsApp Number 1 -->
+                <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20inquire%20about%20your%20training%20classes." 
+                   target="_blank" 
+                   class="flex items-center justify-between p-3.5 rounded-xl bg-white/10 hover:bg-white/20 transition-all border border-white/20 group">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-[#25D366] text-white flex items-center justify-center font-bold text-sm">
+                      <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-green-200 font-medium">WhatsApp Line 1</p>
+                      <p class="text-sm font-bold text-white tracking-wide">+252 770 662 323</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-green-200 group-hover:text-white flex items-center space-x-1">
+                    <span>Chat</span>
+                    <i class="fas fa-arrow-right text-[10px]"></i>
+                  </span>
+                </a>
+
+                <!-- WhatsApp Number 2 -->
+                <a href="https://wa.me/252613911963?text=Hello%20Kulmeri%20Academic!%20I%20would%20like%20to%20inquire%20about%20your%20training%20classes." 
+                   target="_blank" 
+                   class="flex items-center justify-between p-3.5 rounded-xl bg-white/10 hover:bg-white/20 transition-all border border-white/20 group">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-[#25D366] text-white flex items-center justify-center font-bold text-sm">
+                      <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div>
+                      <p class="text-xs text-green-200 font-medium">WhatsApp Line 2</p>
+                      <p class="text-sm font-bold text-white tracking-wide">+252 613 911 963</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-green-200 group-hover:text-white flex items-center space-x-1">
+                    <span>Chat</span>
+                    <i class="fas fa-arrow-right text-[10px]"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Call Cards -->
+            <div class="p-6 rounded-3xl bg-white border border-[#E8DDCD] shadow-sm space-y-4">
+              <h4 class="text-sm font-bold uppercase tracking-wider text-[#8C531B] flex items-center space-x-2">
+                <i class="fas fa-phone-volume text-[#C68A4C]"></i>
+                <span>Direct Phone Lines</span>
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="tel:+252770662323" class="p-3 rounded-xl bg-[#FAF6F0] hover:bg-[#F3EBDD] border border-[#E8DDCD] transition-colors block">
+                  <span class="text-[11px] text-stone-500 block">Admissions Desk</span>
+                  <span class="text-sm font-bold text-[#2A1810]">+252 770 662 323</span>
+                </a>
+                <a href="tel:+252613911963" class="p-3 rounded-xl bg-[#FAF6F0] hover:bg-[#F3EBDD] border border-[#E8DDCD] transition-colors block">
+                  <span class="text-[11px] text-stone-500 block">Student Support</span>
+                  <span class="text-sm font-bold text-[#2A1810]">+252 613 911 963</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Email & Location Cards -->
+            <div class="p-6 rounded-3xl bg-white border border-[#E8DDCD] shadow-sm space-y-4">
+              <div class="flex items-start space-x-3.5">
+                <div class="w-10 h-10 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B] flex-shrink-0">
+                  <i class="fas fa-envelope text-sm"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-stone-500 font-medium">Official Email</span>
+                  <a href="mailto:info@kulmeriacademic.com" class="block text-sm font-bold text-[#2A1810] hover:text-[#C68A4C]">
+                    info@kulmeriacademic.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-3.5 pt-3 border-t border-stone-100">
+                <div class="w-10 h-10 rounded-full bg-[#FAF0E4] border border-[#E0CFBD] flex items-center justify-center text-[#8C531B] flex-shrink-0">
+                  <i class="fas fa-map-marker-alt text-sm"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-stone-500 font-medium">Academy Location</span>
+                  <p class="text-sm font-bold text-[#2A1810]">Mogadishu, Somalia</p>
+                  <p class="text-xs text-stone-500">KM4 Area &bull; Open Saturday to Thursday, 8:00 AM &ndash; 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Registration & WhatsApp Inquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white p-6 sm:p-10 rounded-3xl border border-[#E8DDCD] shadow-lg relative">
+              
+              <div class="mb-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#C68A4C]">Fast Track Registration</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#2A1810] mt-1">
+                  Send Your Inquiry Directly to WhatsApp
+                </h3>
+                <p class="text-xs sm:text-sm text-stone-600 mt-1.5">
+                  Fill in your details below and click the button to send your formatted inquiry directly to our admissions counselor on WhatsApp.
+                </p>
+              </div>
+
+              <form id="contactForm" class="space-y-4">
+                <!-- Name Field -->
+                <div>
+                  <label for="formName" class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">
+                    Your Full Name *
+                  </label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400">
+                      <i class="fas fa-user text-sm"></i>
+                    </span>
+                    <input type="text" id="formName" required placeholder="e.g. Mohamed Ali" 
+                           class="w-full pl-10 pr-4 py-3 bg-[#FAF6F0] rounded-xl border border-[#E8DDCD] focus:border-[#C68A4C] focus:bg-white focus:outline-none text-sm transition-colors">
+                  </div>
+                </div>
+
+                <!-- WhatsApp / Phone Number -->
+                <div>
+                  <label for="formPhone" class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">
+                    Your Phone / WhatsApp Number *
+                  </label>
+                  <div class="relative">
+                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-stone-400">
+                      <i class="fas fa-phone text-sm"></i>
+                    </span>
+                    <input type="tel" id="formPhone" required placeholder="+252 61 XXXXXXX" 
+                           class="w-full pl-10 pr-4 py-3 bg-[#FAF6F0] rounded-xl border border-[#E8DDCD] focus:border-[#C68A4C] focus:bg-white focus:outline-none text-sm transition-colors">
+                  </div>
+                </div>
+
+                <!-- Select Class (Barista Class, Pastry Class, or Both) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="formCourse" class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">
+                      Select Class *
+                    </label>
+                    <select id="formCourse" required 
+                            class="w-full px-4 py-3 bg-[#FAF6F0] rounded-xl border border-[#E8DDCD] focus:border-[#C68A4C] focus:bg-white focus:outline-none text-sm transition-colors">
+                      <option value="Barista Training (Specialty Coffee)">☕ Barista Class (4 Weeks)</option>
+                      <option value="Pastry Training (Bakery & Desserts)">🥐 Pastry Class (6 Weeks)</option>
+                      <option value="Dual Master: Barista & Pastry Combined">⭐ Both Classes (Barista &amp; Pastry)</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="formShift" class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">
+                      Preferred Schedule
+                    </label>
+                    <select id="formShift" 
+                            class="w-full px-4 py-3 bg-[#FAF6F0] rounded-xl border border-[#E8DDCD] focus:border-[#C68A4C] focus:bg-white focus:outline-none text-sm transition-colors">
+                      <option value="Morning Shift (8:30 AM - 11:30 AM)">Morning (8:30 AM &ndash; 11:30 AM)</option>
+                      <option value="Afternoon Shift (2:00 PM - 5:00 PM)">Afternoon (2:00 PM &ndash; 5:00 PM)</option>
+                      <option value="Weekend Intensive">Weekend Intensive</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Choose which WhatsApp Number to Send to -->
+                <div>
+                  <span class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">Send message to:</span>
+                  <div class="grid grid-cols-2 gap-3">
+                    <label class="flex items-center space-x-2.5 p-3 rounded-xl border border-[#E8DDCD] bg-[#FAF6F0] cursor-pointer hover:border-[#25D366] transition-colors">
+                      <input type="radio" name="waNumber" value="252770662323" checked class="accent-[#25D366]">
+                      <span class="text-xs font-semibold text-[#2A1810]">+252 770 662 323</span>
+                    </label>
+                    <label class="flex items-center space-x-2.5 p-3 rounded-xl border border-[#E8DDCD] bg-[#FAF6F0] cursor-pointer hover:border-[#25D366] transition-colors">
+                      <input type="radio" name="waNumber" value="252613911963" class="accent-[#25D366]">
+                      <span class="text-xs font-semibold text-[#2A1810]">+252 613 911 963</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Message / Questions -->
+                <div>
+                  <label for="formMessage" class="block text-xs font-bold uppercase tracking-wider text-[#2A1810] mb-1.5">
+                    Questions or Additional Notes (Optional)
+                  </label>
+                  <textarea id="formMessage" rows="3" placeholder="Tell us if you have prior experience or any questions about fees and certificates..." 
+                            class="w-full p-3.5 bg-[#FAF6F0] rounded-xl border border-[#E8DDCD] focus:border-[#C68A4C] focus:bg-white focus:outline-none text-sm transition-colors resize-none"></textarea>
+                </div>
+
+                <!-- Submit Button -> WhatsApp Launch -->
+                <button type="submit" 
+                        class="btn-whatsapp w-full py-4 rounded-xl text-sm font-bold uppercase tracking-wider flex items-center justify-center space-x-2 shadow-lg">
+                  <i class="fab fa-whatsapp text-xl"></i>
+                  <span>Send Inquiry Directly via WhatsApp</span>
+                </button>
+                <p class="text-center text-[11px] text-stone-500">
+                  <i class="fas fa-lock text-stone-400"></i> No wait time &mdash; directly opens WhatsApp with your pre-filled inquiry.
+                </p>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#2A1810] text-[#FAF6F0] pt-16 pb-10 border-t border-[#3E2316]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#3E2316]">
+        
+        <!-- Brand & Crest -->
+        <div class="lg:col-span-4 space-y-4">
+          <img src="assets/logo-white.svg" alt="Kulmeri Academic - Barista & Pastry" class="h-14 w-auto object-contain">
+          <p class="text-stone-300 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Somalia's premier training center for specialty coffee brewing, latte art mastery, and professional pastry &amp; bakery artistry.
+          </p>
+          <div class="pt-2 flex items-center space-x-2">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-[#25D366]"></span>
+            <span class="text-xs text-stone-300 font-medium">Admissions Open for Current Term</span>
+          </div>
+        </div>
+
+        <!-- Quick Links (Focused: Barista Class, Pastry Class, Contact) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#E8C59A]">Quick Links</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-stone-300">
+            <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#barista-class" class="hover:text-white transition-colors">Barista Class</a></li>
+            <li><a href="#pastry-class" class="hover:text-white transition-colors">Pastry Class</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#E8C59A]">Contact Us</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-stone-300">
+            <li class="flex items-center space-x-2.5">
+              <i class="fab fa-whatsapp text-[#25D366] text-base w-4"></i>
+              <a href="https://wa.me/252770662323" target="_blank" class="hover:text-white transition-colors">+252 770 662 323</a>
+            </li>
+            <li class="flex items-center space-x-2.5">
+              <i class="fab fa-whatsapp text-[#25D366] text-base w-4"></i>
+              <a href="https://wa.me/252613911963" target="_blank" class="hover:text-white transition-colors">+252 613 911 963</a>
+            </li>
+            <li class="flex items-center space-x-2.5">
+              <i class="fas fa-envelope text-[#C68A4C] w-4"></i>
+              <a href="mailto:info@kulmeriacademic.com" class="hover:text-white transition-colors">info@kulmeriacademic.com</a>
+            </li>
+            <li class="flex items-center space-x-2.5">
+              <i class="fas fa-map-marker-alt text-[#C68A4C] w-4"></i>
+              <span>Mogadishu, Somalia</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Follow Us & Direct Chat -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#E8C59A]">Follow Us</h4>
+          <div class="flex items-center space-x-3">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C68A4C] text-white flex items-center justify-center transition-colors">
+              <i class="fab fa-facebook-f text-xs"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C68A4C] text-white flex items-center justify-center transition-colors">
+              <i class="fab fa-instagram text-xs"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" aria-label="TikTok" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C68A4C] text-white flex items-center justify-center transition-colors">
+              <i class="fab fa-tiktok text-xs"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C68A4C] text-white flex items-center justify-center transition-colors">
+              <i class="fab fa-youtube text-xs"></i>
+            </a>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/252770662323?text=Hello%20Kulmeri%20Academic!" target="_blank" class="btn-whatsapp py-2.5 px-4 rounded-xl text-xs font-bold inline-flex items-center space-x-2">
+              <i class="fab fa-whatsapp text-base"></i>
+              <span>Chat Directly on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="pt-8 text-center text-xs text-stone-400">
+        <p>&copy; 2025 Kulmeri Academic. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP CHAT BUTTON & POPUP WIDGET -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <!-- Floating WhatsApp Bubble -->
+    <button id="floatingWhatsAppBtn" type="button" aria-label="Open WhatsApp Chat Widget"
+            class="whatsapp-pulse w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform focus:outline-none">
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </button>
+
+    <!-- WhatsApp Quick Popup Box -->
+    <div id="whatsAppPopup" class="hidden absolute bottom-18 right-0 mb-3 w-80 sm:w-88 bg-white rounded-3xl shadow-2xl border border-[#E8DDCD] overflow-hidden transition-all duration-300">
+      
+      <!-- Popup Header -->
+      <div class="bg-gradient-to-r from-[#128C7E] to-[#075E54] text-white p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white text-xl">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold">Kulmeri Academic</h4>
+            <p class="text-[11px] text-green-200">Usually replies in minutes</p>
+          </div>
+        </div>
+        <button id="closeWhatsAppPopup" type="button" class="text-white/80 hover:text-white p-1" aria-label="Close Popup">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Popup Body / Options -->
+      <div class="p-4 bg-[#FAF6F0] space-y-2.5 text-xs">
+        <p class="text-stone-600 font-medium">Hello! How can we assist your culinary journey today?</p>
+        
+        <!-- Option 1: Barista Class -->
+        <button type="button" onclick="openWhatsApp('barista', 1)" 
+                class="w-full text-left p-3 rounded-xl bg-white hover:bg-[#F3EBDD] border border-[#E8DDCD] flex items-center justify-between font-semibold text-[#2A1810] transition-colors shadow-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-coffee text-[#C68A4C]"></i>
+            <span>Inquire About Barista Class</span>
+          </div>
+          <i class="fas fa-chevron-right text-stone-400 text-[10px]"></i>
+        </button>
+
+        <!-- Option 2: Pastry Class -->
+        <button type="button" onclick="openWhatsApp('pastry', 1)" 
+                class="w-full text-left p-3 rounded-xl bg-white hover:bg-[#F3EBDD] border border-[#E8DDCD] flex items-center justify-between font-semibold text-[#2A1810] transition-colors shadow-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-birthday-cake text-[#C68A4C]"></i>
+            <span>Inquire About Pastry Class</span>
+          </div>
+          <i class="fas fa-chevron-right text-stone-400 text-[10px]"></i>
+        </button>
+
+        <!-- Option 3: General Question -->
+        <button type="button" onclick="openWhatsApp('general', 1)" 
+                class="w-full text-left p-3 rounded-xl bg-white hover:bg-[#F3EBDD] border border-[#E8DDCD] flex items-center justify-between font-semibold text-[#2A1810] transition-colors shadow-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-question-circle text-[#C68A4C]"></i>
+            <span>General Admissions Question</span>
+          </div>
+          <i class="fas fa-chevron-right text-stone-400 text-[10px]"></i>
+        </button>
+
+        <!-- Alternative Line 2 button -->
+        <div class="pt-2 text-center">
+          <a href="https://wa.me/252613911963?text=Hello%20Kulmeri%20Academic!" target="_blank" class="text-[11px] text-[#128C7E] font-semibold hover:underline">
+            Or chat with Line 2: +252 613 911 963
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: BARISTA CLASS DETAILED SYLLABUS -->
+  <div id="baristaModal" class="modal-container hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-overlay-bg fixed inset-0 bg-[#1A0E08]/80 backdrop-blur-sm"></div>
+    
+    <div class="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 z-10 border border-[#E8DDCD] shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-[#E8DDCD]">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-[#2A1810] text-[#E8C59A] flex items-center justify-center">
+            <i class="fas fa-coffee text-lg"></i>
+          </div>
+          <div>
+            <span class="text-xs text-[#8C531B] font-bold uppercase tracking-wider">Kulmeri Academic Syllabus</span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#2A1810]">Barista Training Curriculum</h3>
+          </div>
+        </div>
+        <button type="button" onclick="closeModal('baristaModal')" class="w-9 h-9 rounded-full bg-[#FAF6F0] hover:bg-[#E8DDCD] flex items-center justify-center text-stone-600 transition-colors">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="py-6 space-y-6 text-sm text-stone-700">
+        <p class="leading-relaxed">
+          The Barista Training program at Kulmeri Academic takes you from beginner basics to commercial coffee shop mastery. Over 4 comprehensive weeks, you receive extensive hands-on station time with guidance from SCA-certified baristas.
+        </p>
+
+        <!-- 4 Weeks Breakdown -->
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 1: Coffee Origins, Bean Chemistry &amp; Espresso Extraction</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 1</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Arabica vs Robusta, bean processing methods, grinder calibration, dose-to-yield brew ratios, and dialing in espresso shots.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 2: Milk Science &amp; Latte Art Foundation</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 2</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Milk texturing and creating silky microfoam, pitcher ergonomics, basic pouring mechanics: Heart, Tulip, and Rosetta designs.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 3: Manual Brewing &amp; Specialty Beverage Menu</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 3</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Mastery of V60, Chemex, Aeropress, French Press, cold brew immersion, signature iced drinks, and syrups.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 4: Commercial Workflow, Speed Bar &amp; Machine Maintenance</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 4</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">High-volume rush hour simulation, order taking, grouphead backflushing, steam wand sanitation, and final certification exam.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F3EBDD] flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#8C531B]">Certificate Awarded:</span>
+            <p class="text-sm font-bold text-[#2A1810]">Kulmeri Professional Barista Certificate</p>
+          </div>
+          <span class="text-2xl text-[#8C531B]"><i class="fas fa-award"></i></span>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-[#E8DDCD] flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/252770662323?text=Hello%20Kulmeri!%20I%20reviewed%20the%20Barista%20Syllabus%20and%20want%20to%20enroll." 
+           target="_blank" 
+           class="btn-whatsapp flex-1 py-3 px-4 rounded-xl text-center font-bold text-xs sm:text-sm flex items-center justify-center space-x-2">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span>Enroll via WhatsApp (+252 770 662 323)</span>
+        </a>
+        <button type="button" onclick="closeModal('baristaModal')" class="px-5 py-3 rounded-xl border border-stone-300 hover:bg-stone-100 text-xs sm:text-sm font-semibold">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: PASTRY CLASS DETAILED SYLLABUS -->
+  <div id="pastryModal" class="modal-container hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-overlay-bg fixed inset-0 bg-[#1A0E08]/80 backdrop-blur-sm"></div>
+    
+    <div class="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 z-10 border border-[#E8DDCD] shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-[#E8DDCD]">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-[#2A1810] text-[#E8C59A] flex items-center justify-center">
+            <i class="fas fa-birthday-cake text-lg"></i>
+          </div>
+          <div>
+            <span class="text-xs text-[#8C531B] font-bold uppercase tracking-wider">Kulmeri Academic Syllabus</span>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#2A1810]">Pastry Training Curriculum</h3>
+          </div>
+        </div>
+        <button type="button" onclick="closeModal('pastryModal')" class="w-9 h-9 rounded-full bg-[#FAF6F0] hover:bg-[#E8DDCD] flex items-center justify-center text-stone-600 transition-colors">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="py-6 space-y-6 text-sm text-stone-700">
+        <p class="leading-relaxed">
+          The Pastry Training program at Kulmeri Academic is an intensive 6-week masterclass covering baking essentials, artisan viennoiserie, sponge crafting, and delicate dessert artistry inside a professional commercial kitchen.
+        </p>
+
+        <!-- 6 Weeks Breakdown -->
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 1-2: French Viennoiserie &amp; Artisan Yeast Breads</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 1</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Lamination butter folding, flaky croissants, pains au chocolat, brioche rolls, Danish pastries, and artisan bread shaping.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 3-4: Sponge Baking, Layering &amp; Cake Finishing</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 2</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Vanilla &amp; chocolate génoise, Swiss meringue buttercream, level crumb coating, berry coulis fillings, and sharp edges.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 5: Tarts, Choux Pastry &amp; Confectionery</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 3</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Pâte sablée, fruit tarts, chocolate ganache tarts, éclairs, cream puffs with craquelin, and delicate macarons.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DDCD]">
+            <h4 class="font-bold text-[#2A1810] flex items-center justify-between">
+              <span>Week 6: Chocolate Tempering, Mirror Glazes &amp; Bakery Business</span>
+              <span class="text-xs bg-[#C68A4C] text-white px-2.5 py-0.5 rounded-full">Module 4</span>
+            </h4>
+            <p class="text-xs text-stone-600 mt-1">Seeding chocolate, mirror glaze drip cakes, dessert presentation, commercial bakery costing, and graduation showcase.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#F3EBDD] flex items-center justify-between">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#8C531B]">Certificate Awarded:</span>
+            <p class="text-sm font-bold text-[#2A1810]">Certified Kulmeri Pastry Specialist</p>
+          </div>
+          <span class="text-2xl text-[#8C531B]"><i class="fas fa-award"></i></span>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-[#E8DDCD] flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/252770662323?text=Hello%20Kulmeri!%20I%20reviewed%20the%20Pastry%20Syllabus%20and%20want%20to%20enroll." 
+           target="_blank" 
+           class="btn-whatsapp flex-1 py-3 px-4 rounded-xl text-center font-bold text-xs sm:text-sm flex items-center justify-center space-x-2">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span>Enroll via WhatsApp (+252 770 662 323)</span>
+        </a>
+        <button type="button" onclick="closeModal('pastryModal')" class="px-5 py-3 rounded-xl border border-stone-300 hover:bg-stone-100 text-xs sm:text-sm font-semibold">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR GALLERY PHOTOS -->
+  <div id="lightboxModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="fixed inset-0 bg-black/90 backdrop-blur-md" onclick="document.getElementById('lightboxModal').classList.add('hidden'); document.body.style.overflow='';"></div>
+    <div class="relative z-10 max-w-4xl w-full text-center">
+      <button type="button" onclick="document.getElementById('lightboxModal').classList.add('hidden'); document.body.style.overflow='';" class="absolute -top-12 right-0 text-white text-2xl p-2 hover:text-[#C68A4C]">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="lightboxImg" src="" alt="Kulmeri Academic Environment" class="max-h-[80vh] w-auto mx-auto rounded-2xl shadow-2xl border-2 border-white/20">
+      <p id="lightboxCaption" class="text-stone-300 font-serif text-lg mt-4"></p>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
